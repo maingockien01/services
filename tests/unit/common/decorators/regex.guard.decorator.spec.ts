@@ -1,4 +1,4 @@
-import { RegexGuard } from 'services/common/decorators/regex.guard.decorator';
+import { RegexGuard } from 'common/decorators/regex.guard.decorator';
 
 describe('RegexGuardDecorator', () => {
 	class TestClass {
