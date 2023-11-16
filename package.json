@@ -36,6 +36,7 @@
     "mysql2": "^3.6.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
+    "ts-morph": "^20.0.0",
     "typeorm": "^0.3.17"
   },
   "devDependencies": {
@@ -68,7 +69,10 @@
       "json",
       "ts"
     ],
-    "moduleDirectories": ["services", "node_modules"],
+    "moduleDirectories": [
+      "services",
+      "node_modules"
+    ],
     "rootDir": "tests/unit",
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
