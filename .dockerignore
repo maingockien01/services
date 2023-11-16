@@ -1,0 +1,11 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore NestJS build output directory
+dist
+
+# Ignore NestJS debug files
+*.log
+*.tsbuildinfo
+
+# Ignore any other files or directories that are not needed in the Docker image
