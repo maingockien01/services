@@ -1,0 +1,16 @@
+type Authenticable {
+    
+    username: String
+
+    email: String
+
+    role: Role
+}
+
+type Role {
+    name: String!
+}
+
+type Permission {
+    name: String!
+}

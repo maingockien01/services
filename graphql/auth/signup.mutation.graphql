@@ -1,0 +1,15 @@
+type Mutation {
+
+    signUp(input: SignUpInput!): SignUpPayload!
+}
+
+input SignUpInput {
+    authenticable: Authenticable!
+
+    password: String!
+}
+
+type SignUpPayload {
+
+    authenticable: Authenticable!
+}

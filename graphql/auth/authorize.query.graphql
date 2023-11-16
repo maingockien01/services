@@ -1,0 +1,10 @@
+type Query {
+    authorize(input: AuthorizeInput): Boolean!
+}
+
+input AuthorizeInput {
+
+    authenticable: Authenticable!
+
+    permission: Permission
+}

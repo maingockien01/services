@@ -1,0 +1,5 @@
+interface MutationPayload {
+    
+    success: Boolean!
+    message: String
+}

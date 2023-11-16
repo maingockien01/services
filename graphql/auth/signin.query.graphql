@@ -1,0 +1,16 @@
+type Query {
+    signIn(input: SignInInput): SignInPayload!
+}
+
+input SignInInput {
+    
+    authenticable: Authenticable
+
+    access_token: String
+    
+    password: String
+}
+
+type SignInPayload {
+    access_token: String!
+}
