@@ -1,7 +1,7 @@
 import * as bcrypt from 'bcrypt';
 import { RegexGuard } from '../../common/decorators/regex.guard.decorator';
 import { assert } from 'console';
-import { IPassword } from 'services/auth/models/interface';
+import { IPassword } from 'models/auth/interface';
 
 export class RawPassword implements IPassword {
 	static fromRaw(raw: string, salt: number = bcrypt.genSaltSync()): RawPassword {

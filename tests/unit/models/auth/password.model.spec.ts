@@ -1,7 +1,4 @@
-import {
-	HashedPassword,
-	RawPassword,
-} from 'services/auth/models/password.model';
+import { HashedPassword, RawPassword } from 'models/auth/password';
 
 describe('Password', () => {
 	describe('RawPassword', () => {
