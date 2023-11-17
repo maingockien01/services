@@ -9,7 +9,7 @@ readdirSync(__dirname, { withFileTypes: true })
 	.map((subdirectory) => {
 		const graphqlDirectoryPath = join(__dirname, subdirectory);
 		const commonDirectoryPath = join(__dirname, 'common');
-		const outputFilePath = join(process.cwd(), 'dtos', `${subdirectory}.ts`);
+		const outputFilePath = join(process.cwd(), 'shared/dtos', `${subdirectory}.ts`);
 
 		try {
 			unlinkSync(outputFilePath);
