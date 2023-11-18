@@ -22,3 +22,11 @@ export interface IPassword {
 	get hashed(): string;
 	get salt(): number;
 }
+
+export interface IRole {
+	name: string;
+}
+
+export interface IHasRole {
+	role: IRole;
+}

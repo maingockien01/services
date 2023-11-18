@@ -1,9 +1,9 @@
 import { Column, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { IAuthorizable, IPermission } from './interface';
+import { IAuthorizable, IPermission, IRole } from './interface';
 import { Permission } from './permission.model';
 
 @Entity({ name: 'roles' })
-export class Role implements IAuthorizable {
+export class Role implements IAuthorizable, IRole {
 	@PrimaryGeneratedColumn({ type: 'int', name: 'id', unsigned: true })
 	id: number;
 

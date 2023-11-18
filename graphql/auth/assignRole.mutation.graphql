@@ -1,0 +1,12 @@
+type Mutation {
+    assignRole(input: AssignRoleInput!): AssignRolePayload
+}
+
+input AssignRoleInput {
+    authenticable: Authenticable
+    role: Role
+}
+
+type AssignRolePayload {
+    role: Role
+}

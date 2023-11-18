@@ -1,4 +1,3 @@
-
 /*
  * -------------------------------------------------------
  * THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
@@ -7,6 +6,11 @@
 
 /* tslint:disable */
 /* eslint-disable */
+
+export interface AssignRoleInput {
+    authenticable?: Nullable<Authenticable>;
+    role?: Nullable<Role>;
+}
 
 export interface AuthorizeInput {
     authenticable: Authenticable;
@@ -29,6 +33,18 @@ export interface MutationPayload {
     message?: Nullable<string>;
 }
 
+export interface IMutation {
+    __typename?: 'IMutation';
+    assignRole(input: AssignRoleInput): Nullable<AssignRolePayload> | Promise<Nullable<AssignRolePayload>>;
+    signUp(input: SignUpInput): SignUpPayload | Promise<SignUpPayload>;
+}
+
+export interface AssignRolePayload {
+    __typename?: 'AssignRolePayload';
+    authenticable?: Nullable<Authenticable>;
+    role?: Nullable<Role>;
+}
+
 export interface IQuery {
     __typename?: 'IQuery';
     authorize(input?: Nullable<AuthorizeInput>): boolean | Promise<boolean>;
@@ -38,11 +54,6 @@ export interface IQuery {
 export interface SignInPayload {
     __typename?: 'SignInPayload';
     access_token: string;
-}
-
-export interface IMutation {
-    __typename?: 'IMutation';
-    signUp(input: SignUpInput): SignUpPayload | Promise<SignUpPayload>;
 }
 
 export interface SignUpPayload {
